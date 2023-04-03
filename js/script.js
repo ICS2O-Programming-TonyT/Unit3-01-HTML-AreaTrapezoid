@@ -1,5 +1,5 @@
 // Get the form and result elements
-const form = document.getElementById('triangular-form');
+const form = document.getElementById('trapezoid-form');
 const resultDiv = document.getElementById('result');
 
 // Add event listener to the form submit button
@@ -12,8 +12,9 @@ form.addEventListener('submit', function(event) {
   const Base1 = parseFloat(document.getElementById('Base1').value);
   const Base2 = parseFloat(document.getElementById('Base2').value);
   const Units = document.getElementById('Units').value;
-  // Calculate the Volume Triangular Pyramid 
-  const area = Base1+Base2/2*Height;
+  // Calculate the Are of a TrapeZoid 
+  const area = ((Base1+Base2)/2)*Height;
+  console.log(area)
   // Display the result
-  resultDiv.innerHTML = `The area of the Trapezoid is ${area.toFixed(2)} ${units}<sup>2</sup>.`;
+  resultDiv.innerHTML = `The area of the Trapezoid is ${area.toFixed(2)} ${Units}<sup>2</sup>.`;
 });
